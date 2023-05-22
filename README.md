@@ -26,8 +26,8 @@ And from this part
 
 
 ##### Team Members:
-Zainab Galal Abdelmaksoud 2000467
-Donia Hany Saeed 2000400
-Hana Salah Mohamed 2001490
-Mohanad Ahmed Mohamed 2001492
-Farah Mohamed Adel Salama 2002127
+* Zainab Galal Abdelmaksoud 2000467
+* Donia Hany Saeed 2000400
+* Hana Salah Mohamed 2001490
+* Mohanad Ahmed Mohamed 2001492
+* Farah Mohamed Adel Salama 2002127
