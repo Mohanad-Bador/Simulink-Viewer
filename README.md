@@ -1,7 +1,7 @@
 # Simulink-Viewer
 Advanced Programming project to read a Simulink file and display its data using javafx
 ## HOW TO RUN Simulink Viewer Project
-## Choose the compatable MDL file and it'll show the windows with the blocks on it
+* Choose the compatable MDL file and it'll show the windows with the blocks on it
 
 ### Consisting of 4 Classes:
 #### 1.SimulinkParser Class
