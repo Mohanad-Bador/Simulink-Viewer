@@ -17,7 +17,7 @@ And from this part
           
 #### The Main Method:
 * Parse the necessary info using Simulink parser
-* Create arrays to save the data of the blocks depending on their Zorder  ex:x[3] have the x component of the 3rd block's src
+* Create arrays to save the data of the blocks depending on their Zorder  ex:  x[3] have the x component of the 3rd block's src
 * Draw all the lines either from src to dst using blocks or from points
 * If one of the lines have a branch make the branche's src the line's dest
 * Draw all the rest of the GUI using javafx (shading of lines,arrows)
