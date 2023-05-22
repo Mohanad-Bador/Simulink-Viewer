@@ -23,12 +23,11 @@ public class App extends Application {
 	public void start(Stage primaryStage) {
 		// Create a pane
 		Pane pane = new Pane();
-		SimulinkParser p=new SimulinkParser();
 		int[] x=new int[320];
 		int[] y=new int[320];
 		int[] l=new int[320];
 		int[] w=new int[320];
-		for(Block b:p.getBlocks())
+		for(Block b:SimulinkParser.getBlocks())
 		{
 			int nX=b.getX()-730;
 			int nY=b.getY()-150;
@@ -143,7 +142,7 @@ public class App extends Application {
 			pane.getChildren().add(r2);
 		}
 
-		for(Lines L:p.getLines())
+		for(Lines L:SimulinkParser.getLines())
 		{
 			int s= L.getSource();
 			if(L.points.isEmpty())
@@ -498,6 +497,8 @@ public class App extends Application {
 	}
 
 	public static void main(String[] args) {
+		String filepath=args[0];
+		SimulinkParser.parse(filepath);
 		launch(args);
 	}
 }
