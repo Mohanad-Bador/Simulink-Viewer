@@ -5,6 +5,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
@@ -17,6 +18,8 @@ import javafx.scene.shape.Rectangle;
 
 import static javafx.scene.paint.Color.WHITE;
 
+import java.io.*;
+
 
 public class App extends Application {
 	@Override
@@ -27,6 +30,12 @@ public class App extends Application {
 		int[] y=new int[320];
 		int[] l=new int[320];
 		int[] w=new int[320];
+		
+		FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showOpenDialog(primaryStage);
+        String filename=file.getAbsolutePath();
+        SimulinkParser.parse(filename);
+
 		for(Block b:SimulinkParser.getBlocks())
 		{
 			int nX=b.getX()-730;
@@ -497,8 +506,6 @@ public class App extends Application {
 	}
 
 	public static void main(String[] args) {
-		String filepath=args[0];
-		SimulinkParser.parse(filepath);
 		launch(args);
 	}
 }
