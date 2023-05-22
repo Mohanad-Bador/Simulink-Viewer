@@ -17,16 +17,16 @@ import org.xml.sax.InputSource;
 
 
 public class SimulinkParser {
-	private ArrayList<Block> Blocks=new ArrayList<Block>();
-	private ArrayList<Lines> lines=new ArrayList<Lines>();
+	private static ArrayList<Block> Blocks=new ArrayList<Block>();
+	private static ArrayList<Lines> lines=new ArrayList<Lines>();
 	
-	public SimulinkParser() {
+	public static void parse(String filepath) {
 		
 		try 
 		{
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 	        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-	        String xml= ExtractBlock("D:\\College\\Spring 23\\Advanced Programming\\Visual Studio\\Project\\lib\\Example.mdl");
+	        String xml= ExtractBlock(filepath);
 	        InputSource is =new InputSource(new StringReader(xml));
 	        Document doc = dBuilder.parse(is);
 	        doc.getDocumentElement().normalize();
@@ -144,11 +144,11 @@ public class SimulinkParser {
 		}
 	}
 	
-	public List<Block> getBlocks()
+	public static List<Block> getBlocks()
 	{
 		return Blocks;
 	}
-	public List<Lines> getLines()
+	public static List<Lines> getLines()
 	{
 		return lines;
 	}
