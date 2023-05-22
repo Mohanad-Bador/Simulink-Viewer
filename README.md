@@ -21,3 +21,13 @@ And from this part
 * Draw all the lines either from src to dst using blocks or from points
 * If one of the lines have a branch make the branche's src the line's dest
 * Draw all the rest of the GUI using javafx (shading of lines,arrows)
+
+
+
+
+##### Team Members:
+Zainab Galal Abdelmaksoud 2000467
+Donia Hany Saeed 2000400
+Hana Salah Mohamed 2001490
+Mohanad Ahmed Mohamed 2001492
+Farah Mohamed Adel Salama 2002127
